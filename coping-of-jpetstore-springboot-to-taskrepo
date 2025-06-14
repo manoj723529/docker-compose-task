@@ -1,0 +1,41 @@
+#Clone the Source Repositories
+git clone https://github.com/manoj723529/jpetstore-6.git
+git clone https://github.com/manoj723529/spring-boot-mongo-docker.git
+
+#Create a New Repository
+git clone https://github.com/your-username/docker-compose-task.git
+cd docker-compose-task
+
+#Copy the Projects into Separate Directories
+mkdir jpetstore-6
+mkdir spring-boot-mongo-docker
+
+cp -r ../jpetstore-6/* jpetstore-6/
+cp -r ../spring-boot-mongo-docker/* spring-boot-mongo-docker/
+
+#Commit and Push the Changes
+git add .
+git commit -m "Add jpetstore-6 and spring-boot-mongo-docker projects"
+git push origin main
+
+
+
+
+
+
+
+
+
+
+
+#RESULT
+combined-projects/
+├── jpetstore-6/
+│   ├── src/
+│   ├── pom.xml
+│   └── ...
+└── spring-boot-mongo-docker/
+    ├── src/
+    ├── Dockerfile
+    ├── docker-compose.yml
+    └── ...
