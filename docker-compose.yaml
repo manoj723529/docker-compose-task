@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jpetstore:
+    build:
+      context: ./jpetstore
+    container_name: jpetstore
+    ports:
+      - "8080:8080"
+
+  spring-boot-mongo-docker:
+    build:
+      context: ./spring-boot-mongo-docker
+    container_name: spring-boot-mongo-docker
+    ports:
+      - "8081:8080"
